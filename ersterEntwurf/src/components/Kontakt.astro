@@ -1,0 +1,76 @@
+<section id="kontakt" class="py-5 bg-light"> 
+  <!-- Optional: Hintergrundfarbe hinzugefügt für Abgrenzung -->
+  <div class="container">
+  
+    <h2 class="text-center mb-4 display-4 fw-bold">Kontaktieren Sie uns</h2> 
+    <!-- Überschrift prominenter gemacht -->
+
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 text-center">
+      
+        <!-- Kleiner Einleitungstext -->
+        <p class="lead">
+          Haben Sie Fragen oder wünschen Sie ein unverbindliches Angebot? Wir freuen uns auf Ihre Nachricht!
+        </p>
+
+        <!-- Nur E-Mail bleibt erhalten -->
+        <p>
+          <strong>KUI Gebäudeservice</strong>
+        </p>
+        <p class="mt-2">
+          E-Mail: 
+          <a href="mailto:info@kui-geb.de">info@kui-geb.de</a>
+        </p>
+
+        <!-- Kontaktformular -->
+        <form class="mt-4" action="#" method="POST">
+          <div class="mb-3">
+            <input 
+              type="text" 
+              placeholder="Ihr Name" 
+              name="name" 
+              class="form-control" 
+              required 
+            />
+          </div>
+
+          <div class="mb-3">
+            <input 
+              type="email" 
+              placeholder="Ihre E-Mail" 
+              name="email" 
+              class="form-control" 
+              required 
+            />
+          </div>
+
+          <div class="mb-3">
+            <textarea 
+              placeholder="Ihre Nachricht" 
+              name="nachricht" 
+              rows="4" 
+              class="form-control" 
+              required
+            ></textarea>
+          </div>
+
+          <!-- DSGVO-Checkbox -->
+          <div class="form-check text-start mb-3">
+            <input 
+              class="form-check-input" 
+              type="checkbox" 
+              id="datenschutz" 
+              required 
+            />
+            <label class="form-check-label" for="datenschutz">
+              Ich habe die 
+              <a href="/datenschutz" target="_blank">
+                Datenschutzerklärung
+              </a> 
+              gelesen und stimme der Verarbeitung meiner Daten zu.
+            </label>
+          </div>
+
+          <!-- Absenden-Button -->
+          <button type="submit" class="btn btn-danger btn-lg w-100">
+            Absenden

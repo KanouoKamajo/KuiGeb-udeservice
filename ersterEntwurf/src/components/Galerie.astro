@@ -1,0 +1,82 @@
+---
+const galleryImages = [
+  {
+    src: "/images/Bild1.png",
+    thumb: "/images/thumbs/Bild1.png", // Passe diesen Pfad an, wenn deine Thumbnails woanders liegen
+    width: 1200,
+    height: 800,
+    alt: "Innenputz",
+    caption: "Professioneller Innenputz für glatte Oberflächen",
+  },
+  {
+    src: "/images/Bild2.png",
+    thumb: "/images/thumbs/Bild2.png",
+    width: 1200,
+    height: 800,
+    alt: "Außenputz",
+    caption: "Robuster Außenputz für langlebige Fassaden",
+  },
+  {
+    src: "/images/Bild3.png",
+    thumb: "/images/thumbs/Bild3.png",
+    width: 1200,
+    height: 800,
+    alt: "Wärmedämmung",
+    caption: "Effiziente Wärmedämmung spart Heizkosten",
+  },
+  {
+    src: "/images/Bild4.png",
+    thumb: "/images/thumbs/Bild4.png",
+    width: 1200,
+    height: 800,
+    alt: "Fassadensanierung",
+    caption: "Umfassende Sanierung Ihrer Gebäudehülle",
+  },
+  {
+    src: "/images/Bild5.png",
+    thumb: "/images/thumbs/Bild5.png",
+    width: 1200,
+    height: 800,
+    alt: "Renovierungsarbeiten",
+    caption: "Individuelle Renovierung nach Ihren Wünschen",
+  },
+  {
+    src: "/images/Bild6.png",
+    thumb: "/images/thumbs/Bild6.png",
+    width: 1200,
+    height: 800,
+    alt: "Trockenbau",
+    caption: "Schneller und sauberer Trockenbau",
+  },
+  {
+    src: "/images/Bild7.png",
+    thumb: "/images/thumbs/Bild7.png",
+    width: 1200,
+    height: 800,
+    alt: "Trockenbau",
+    caption: "Schneller und sauberer Trockenbau",
+  },
+  // Weitere Bilder hier einfügen
+];
+---
+
+<section id="galerie" class="py-5 bg-white"> {/* Bootstrap-Klassen für Padding und weißen Hintergrund */}
+  <div class="container"> {/* Der Bootstrap-Container sorgt für die richtige Breite und Zentrierung */}
+    <h2 class="text-center mb-4 display-4 fw-bold">Unsere Arbeiten in Bildern</h2> {/* Bootstrap-Klassen für Überschrift */}
+
+    <details class="gallery">
+      <summary class="text-primary text-decoration-none d-block text-center mb-4">Bildergalerie anzeigen</summary> {/* Bootstrap-Klassen für Textstil, Zentrierung und Abstand */}
+      <div class="gallery-grid">
+        {galleryImages.map((image) => (
+          <a href={image.src}
+            data-pswp-width={image.width}
+            data-pswp-height={image.height}
+            data-pswp-caption={image.caption}
+            target="_blank">
+            <img src={image.thumb} alt={image.alt} class="img-fluid" /> {/* img-fluid sorgt für responsives Bildverhalten */}
+          </a>
+        ))}
+      </div>
+    </details>
+  </div>
+</section>
