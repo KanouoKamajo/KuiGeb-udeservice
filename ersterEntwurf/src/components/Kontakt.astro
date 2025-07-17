@@ -19,11 +19,14 @@
         </p>
         <p class="mt-2">
           E-Mail: 
-          <a href="mailto:info@kui-geb.de">info@kui-geb.de</a>
+          <a href="mailto:kuisiegel@hotmail.de"> </a>
         </p>
 
         <!-- Kontaktformular -->
-        <form class="mt-4" action="#" method="POST">
+        
+        
+        <form id="kontaktformular" class="mt-4"  method="POST">
+
           <div class="mb-3">
             <input 
               type="text" 
@@ -54,6 +57,9 @@
             ></textarea>
           </div>
 
+          <!-- Anti-Spam-Feld (Honeypot) -->
+          <input type="text" name="_gotcha" style="display: none;" tabindex="-1" autocomplete="off" />
+
           <!-- DSGVO-Checkbox -->
           <div class="form-check text-start mb-3">
             <input 
@@ -74,3 +80,7 @@
           <!-- Absenden-Button -->
           <button type="submit" class="btn btn-danger btn-lg w-100">
             Absenden
+          </button>
+        </form>
+
+      

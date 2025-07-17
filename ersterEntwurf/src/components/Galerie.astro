@@ -2,7 +2,7 @@
 const galleryImages = [
   {
     src: "/images/Bild1.png",
-    thumb: "/images/thumbs/Bild1.png", // Passe diesen Pfad an, wenn deine Thumbnails woanders liegen
+    thumb: "/images/thumbs/Bild1.png",
     width: 1200,
     height: 800,
     alt: "Innenputz",
@@ -56,24 +56,33 @@ const galleryImages = [
     alt: "Trockenbau",
     caption: "Schneller und sauberer Trockenbau",
   },
-  // Weitere Bilder hier einfügen
 ];
 ---
 
-<section id="galerie" class="py-5 bg-white"> {/* Bootstrap-Klassen für Padding und weißen Hintergrund */}
-  <div class="container"> {/* Der Bootstrap-Container sorgt für die richtige Breite und Zentrierung */}
-    <h2 class="text-center mb-4 display-4 fw-bold">Unsere Arbeiten in Bildern</h2> {/* Bootstrap-Klassen für Überschrift */}
+<section id="galerie" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4 display-4 fw-bold">Unsere Arbeiten in Bildern</h2>
 
     <details class="gallery">
-      <summary class="text-primary text-decoration-none d-block text-center mb-4">Bildergalerie anzeigen</summary> {/* Bootstrap-Klassen für Textstil, Zentrierung und Abstand */}
-      <div class="gallery-grid">
+      <summary class="text-primary text-decoration-none d-block text-center mb-4">
+        Bildergalerie anzeigen
+      </summary>
+
+      <div class="gallery-grid d-flex flex-wrap gap-3 justify-content-center">
         {galleryImages.map((image) => (
-          <a href={image.src}
+          <a
+            href={image.src}
             data-pswp-width={image.width}
             data-pswp-height={image.height}
             data-pswp-caption={image.caption}
-            target="_blank">
-            <img src={image.thumb} alt={image.alt} class="img-fluid" /> {/* img-fluid sorgt für responsives Bildverhalten */}
+            target="_blank"
+          >
+            <img
+              src={image.thumb}
+              alt={image.alt}
+              class="img-fluid rounded shadow"
+              width="200"
+            />
           </a>
         ))}
       </div>
