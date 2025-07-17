@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <!-- Titel der Seite für Browser-Tab und SEO -->
-  <title>Datenschutzerklärung</title>
-  
-  <!-- Responsives Layout für alle Geräte -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+---
+import Layout from "../layouts/Layout.astro";
+---
+  <Layout title="Datenschutzerklärung">
+    <div class="container py-5"> 
   <!-- Einfache CSS-Formatierung direkt im Dokument -->
-  <style>
+  <!-- <style>
     body {
       font-family: sans-serif; /* Standardschrift */
       padding: 2rem;           /* Innenabstand für Lesbarkeit */
@@ -24,10 +19,7 @@
       font-size: 2rem;       /* Größere Schrift für Hauptüberschrift */
       margin-bottom: 1rem;   /* Abstand zur nächsten Zeile */
     }
-  </style>
-</head>
-
-<body>
+  </style> -->
   <!-- Hauptüberschrift -->
   <h1>Datenschutzerklärung</h1>
 
@@ -107,5 +99,5 @@
   <p>
     <a href="/">Zurück zur Startseite</a>
   </p>
-</body>
-</html>
+  </div>
+</Layout>

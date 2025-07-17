@@ -1,13 +1,9 @@
 ---
-// Kein Frontmatter notwendig
+import Layout from "../layouts/Layout.astro";
 ---
-
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Impressum – KUI Gebäudeservice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
+<Layout title="Impressum – KUI Gebäudegestaltung">
+  <div class="container py-5"> 
+    <!-- <style>
       body {
         font-family: sans-serif;
         padding: 2rem;
@@ -31,12 +27,10 @@
       a:hover {
         text-decoration: underline;
       }
-    </style>
-  </head>
-  <body>
+    </style> -->
     <h1>Impressum</h1>
 
-    <p><strong>KUI Gebäudeservice</strong></p>
+    <p><strong>KUI Gebäudesgestaltung</strong></p>
 
     <p>
       Inhaber/Vertretungsberechtigter: Andreas Kui<br />
@@ -78,5 +72,5 @@
     <p>
       <a href="/">Zurück zur Startseite</a>
     </p>
-  </body>
-</html>
+  </div>
+</Layout>
