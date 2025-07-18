@@ -13,4 +13,10 @@ Was ich geändert habe(hoffe das das hier klappt mit den Infos):
  Fragen:
 - Im Moment öffnen sich neue Tabs zum Impressum und zum Datenschutz, sollte man das lassen und die Seiten im aktuellen Tab öffnen lassen?
 - Soll noch ein Bereich über den Leistung eingebaut werden, der Geschichte der Firma beinhaltet, Oder sollte der Hero-Bereich, das ist der Bereich wo der Name fett steht mit einem Bild versehen werden, habe mir andere Seiten angesehen, die solche Lösungen hatten
-- 
+
+
+18.07.2025 
+Änderungen: 
+- Css etwas angepasst
+- Impressum und Datenschutz dem allgemeinen Style angepasst
+- im Leistungsbereich eine weitere Card Carports eingefügt und Modaldummies hinzugefügt, muss ich noch weiter dran arbeiten
