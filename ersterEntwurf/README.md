@@ -69,4 +69,5 @@ Was ich geändert habe(hoffe das das hier klappt mit den Infos):
 Änderungen: 
 - Css etwas angepasst
 - Impressum und Datenschutz dem allgemeinen Style angepasst
-- im Leistungsbereich eine weitere Card Carports eingefügt und Modaldummies hinzugefügt, muss ich noch weiter dran arbeiten
+- im Leistungsbereich zuerst eine weitere Card eingbaut, jetz im Moemtn ist ein Akkordeon drin, die Cards wirken so riesig und wenn dann auch noc mehr Infos sein sollen und jedesmal ein Popupaufgeht ist es vielleicht zu viel?
+  mit Akkordeon eventuell besser?
