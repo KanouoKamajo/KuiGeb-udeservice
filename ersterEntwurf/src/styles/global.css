@@ -41,7 +41,7 @@ body {
     background-color: #ffffff; /* Weißer Hintergrund */
     padding: 60px 20px; /* 60px oben/unten, 20px links/rechts für Inhalt innerhalb des weißen Blocks */
     border-radius: 15px; /* Abgerundete Ecken */
-    margin-bottom: 30px; /* Abstand zum nächsten Abschnitt */
+    margin-bottom: 10px; /* Abstand zum nächsten Abschnitt */
     box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Leichter Schatten */
 
     /* Max-Breite und Zentrierung für den .section-container selbst */
@@ -98,3 +98,4 @@ main > .section-container:first-child {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   display: block;
 }
+
