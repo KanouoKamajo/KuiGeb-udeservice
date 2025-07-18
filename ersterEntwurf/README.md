@@ -49,7 +49,9 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 
 17.07.2025 14:55 Uhr
+
 Von Nadine:
+
 Was ich geändert habe(hoffe das das hier klappt mit den Infos):
 - Layout aktuallisiert: alle metadaten die html usw. liegen jetzt dort, im Impressum und in Datenschutz habe ich es rausgenommen
 - musste das css aus beiden auskommentieren, hat den footer beeinflusst, steht aber noch drin, dann habe ich nocht einen Container darum gebaut, damit die Schrift nicht am Rand link "hängt";
