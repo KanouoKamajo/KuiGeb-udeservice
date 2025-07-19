@@ -74,11 +74,39 @@ html {
 }
 
 .gallery-grid img {
-  width: 100%;
+  width: 200px;
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
   border: 2px solid #ddd;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   display: block;
+  object-position: center; 
 }
+
+/* sticky-button.css */
+
+.sticky-button {
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  z-index: 9999;
+}
+
+.sticky-button a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.sticky-button a:hover {
+  background-color: #0056b3;
+}
+
+ 
