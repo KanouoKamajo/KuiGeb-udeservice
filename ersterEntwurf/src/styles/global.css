@@ -2,6 +2,8 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0; /* padding hier bleibt 0, da wir padding-top separat auf den body setzen */
+  font-family: 'Inter', sans-serif; /* Standard-Schriftart */
+  scroll-behavior: smooth; /* Glatter Scroll-Effekt */
 }
 
 body::before {
@@ -25,14 +27,8 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
   /* NEU: Padding für die feste Navbar */
   padding-top: 56px; /* Standardhöhe der Bootstrap Navbar. Passe dies bei Bedarf an! */
-}
-
-/* Optionale Anpassung für den glatten Scroll-Effekt */
-html {
-    scroll-behavior: smooth;
 }
 
 /* Dein .container min-width (kann bleiben oder entfernt werden) */
@@ -40,7 +36,27 @@ html {
   min-width: 300px;
 }
 
-/* Anpassung für Icons in der Leistungen-Sektion (falls noch nicht in global.css) */
+/* Allgemeine Stile für Sektions-Container (Geschichte, Leistungen, Galerie, Karte, Impressum, Datenschutz) */
+.section-container {
+    background-color: #ffffff; /* Weißer Hintergrund */
+    padding: 60px 20px; /* 60px oben/unten, 20px links/rechts für Inhalt innerhalb des weißen Blocks */
+    border-radius: 15px; /* Abgerundete Ecken */
+    margin-bottom: 10px; /* Abstand zum nächsten Abschnitt */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Leichter Schatten */
+
+    /* Max-Breite und Zentrierung für den .section-container selbst */
+    max-width: 1200px; /* Setze hier deine gewünschte maximale Breite */
+    margin-left: auto; /* Zentriert den Block horizontal */
+    margin-right: auto; /* Zentriert den Block horizontal */
+}
+
+/* NEU: Zusätzlicher Abstand nach oben, NUR für den ERSTEN .section-container auf einer Seite */
+/* Dies überschreibt den 'margin-top' von 'auto' aus der vorherigen Regel */
+main > .section-container:first-child {
+    margin-top: 40px; /* Fügt 40px oberen Außenabstand hinzu */
+}
+
+/* Anpassung für Icons in der Leistungen-Sektion*/
 .icon-placeholder {
   font-size: 4rem; /* Größere Icons */
   color: #0d6efd; /* Bootstrap primary blue */
@@ -81,6 +97,7 @@ html {
   border: 2px solid #ddd;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   display: block;
+<<<<<<< HEAD
   object-position: center; 
 }
 
@@ -110,3 +127,7 @@ html {
 }
 
  
+=======
+}
+
+>>>>>>> c42d188aa83d1aaaef762564c915e110b3463e63

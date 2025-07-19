@@ -1,50 +1,122 @@
 ---
 ---
-<section id="leistungen" class="py-5 bg-light">
-  <div class="container"> {/* Dieser Container ist OPTIONAL hier, wenn du möchtest, dass der Titel außerhalb des Haupt-Containers (aus index.astro) auch mittig ist. Ansonsten kann er auch weg, wenn der Titel im Haupt-Container liegt. */}
-    <h2 class="text-center mb-4 display-4 fw-bold">Unsere Kernkompetenzen im Überblick</h2>
-    
-    <div class="row g-4 justify-content-center"> {/* Bootstrap-Grid-Reihe mit Gutter (Abstand) und Zentrierung */}
-      
-      <div class="col-md-6 col-lg-4 d-flex"> {/* Spalte, die sich auf mittleren Bildschirmen über 6 Einheiten (halbe Breite) und auf großen über 4 Einheiten (ein Drittel) erstreckt. d-flex für gleiche Kartenhöhe. */}
-        <div class="card shadow-sm h-100 d-flex flex-column text-center">
-          <div class="card-body">
-            <div class="icon-placeholder mb-3">🧱</div> {/* Platzhalter für Icon - Style kommt aus global.css */}
-            <h3 class="card-title h5 fw-bold mb-2">Innenputz – Qualität für Ihre Räume</h3>
-            <p class="card-text text-muted">
-              Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben.
+<section id="leistungen" class="py-5 bg-light section-container">
+  <div class="container">
+    <h2 class="text-center mb-4 display-4 fw-bold">Unsere Leistungen</h2>
+ 
+    <!-- Akkordeon -->
+    <div class="accordion" id="leistungenAccordion">
+
+      {/* Akkordeon-Element 1: Innenputz */}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingInnenputz">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInnenputz" aria-expanded="false" aria-controls="collapseInnenputz">
+             Innenputz – Qualität für Ihre Räume
+          </button>
+        </h2>
+        <div id="collapseInnenputz" class="accordion-collapse collapse" aria-labelledby="headingInnenputz" data-bs-parent="#leistungenAccordion">
+          <div class="accordion-body">
+            <p>
+              Innenputz ist mehr als nur eine glatte Oberfläche. Er spielt eine entscheidende Rolle für die Raumästhetik, das Raumklima und die Schallabsorption. Wir bieten verschiedene Putzsysteme an, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind:
             </p>
-            <a href="#kontakt" class="btn btn-primary mt-auto">Angebot anfordern</a>
+            <ul>
+              <li>**Gipsputz:** Für glatte, ebene Oberflächen und gute Dampfdiffusion. Ideal für Wohnräume.</li>
+              <li>**Kalkzementputz:** Robuster und feuchtigkeitsregulierend, gut für Bäder und Küchen.</li>
+              <li>**Lehmputz:** Für ein besonders natürliches und gesundes Wohnklima, feuchtigkeitsregulierend und allergenarm.</li>
+              <li>**Dekorputze:** Kreative Oberflächengestaltungen wie Reibeputz, Spachteltechniken oder Stuckelemente.</li>
+            </ul>
+            <p>
+              Unsere Experten beraten Sie umfassend bei der Auswahl des passenden Putzsystems und sorgen für eine fachgerechte und saubere Ausführung.
+            </p>
+            <img src="/public/images/innenputz.png" class="img-fluid rounded mt-3" alt="Beispielbild Innenputz">
+            <small class="text-muted d-block mt-2">Hinweis: Dies ist ein Platzhaltertext und -bild.</small>
+            <a href="#kontakt" class="btn btn-primary mt-3 modal-action-btn">Angebot anfordern</a> 
           </div>
         </div>
       </div>
-      
-      <div class="col-md-6 col-lg-4 d-flex">
-        <div class="card shadow-sm h-100 d-flex flex-column text-center">
-          <div class="card-body">
-            <div class="icon-placeholder mb-3">🏗️</div>
-            <h3 class="card-title h5 fw-bold mb-2">Außenputz – Schutz & Ästhetik</h3>
-            <p class="card-text text-muted">
-              Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt. Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte.
+
+      {/* Akkordeon-Element 2: Außenputz */}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingAussenputz">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAussenputz" aria-expanded="false" aria-controls="collapseAussenputz">
+             Außenputz – Schutz & Ästhetik
+          </button>
+        </h2>
+        <div id="collapseAussenputz" class="accordion-collapse collapse" aria-labelledby="headingAussenputz" data-bs-parent="#leistungenAccordion">
+          <div class="accordion-body">
+            <p>
+              Der Außenputz ist die Visitenkarte Ihres Hauses und zugleich dessen wichtigste Schutzschicht. Er bewahrt die Bausubstanz vor Witterungseinflüssen wie Regen, Frost und UV-Strahlung und trägt maßgeblich zur Energieeffizienz bei. Wir bieten:
             </p>
-            <a href="#kontakt" class="btn btn-primary mt-auto">Angebot anfordern</a>
+            <ul>
+              <li>**Wärmedämmputze:** Eine einfache Möglichkeit, die Dämmleistung zu verbessern.</li>
+              <li>**Edelputze:** Für eine hochwertige und langlebige Fassadengestaltung.</li>
+              <li>**Sanierputze:** Spezielle Putze für feuchtebelastetes Mauerwerk zur Beseitigung von Feuchteschäden.</li>
+              <li>**Fassadenanstriche:** Schutz und farbliche Gestaltung Ihrer Fassade.</li>
+            </ul>
+            <p>
+              Wir beraten Sie zu den verschiedenen Materialien und Techniken, um die optimale Lösung für den Schutz und die Ästhetik Ihrer Fassade zu finden.
+            </p>
+            <img src="#" class="img-fluid rounded mt-3" alt="Beispielbild Außenputz">
+            <small class="text-muted d-block mt-2">Hinweis: Dies ist ein Platzhaltertext und -bild.</small>
+            <a href="#kontakt" class="btn btn-primary mt-3 modal-action-btn">Angebot anfordern</a>
           </div>
         </div>
       </div>
-      
-      <div class="col-md-6 col-lg-4 d-flex">
-        <div class="card shadow-sm h-100 d-flex flex-column text-center">
-          <div class="card-body">
-            <div class="icon-placeholder mb-3">🌡️</div>
-            <h3 class="card-title h5 fw-bold mb-2">Wärmedämmung – Effizienz, die sich lohnt</h3>
-            <p class="card-text text-muted">
-              »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat. Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen. Aber sie überwanden sich, umdrängten den Käfig
+
+      {/* Akkordeon-Element 3: Wärmedämmung */}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingWaermedaemmung">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWaermedaemmung" aria-expanded="false" aria-controls="collapseWaermedaemmung">
+             Wärmedämmung – Effizienz, die sich lohnt
+          </button>
+        </h2>
+        <div id="collapseWaermedaemmung" class="accordion-collapse collapse" aria-labelledby="headingWaermedaemmung" data-bs-parent="#leistungenAccordion">
+          <div class="accordion-body">
+            <p>
+              Eine effektive Wärmedämmung ist eine Investition in die Zukunft. Sie reduziert nicht nur Ihre Heizkosten erheblich, sondern steigert auch den Wohnkomfort und den Wert Ihrer Immobilie. Wir bieten moderne Dämm-Systeme für:
             </p>
-            <a href="#kontakt" class="btn btn-primary mt-auto">Angebot anfordern</a>
+            <ul>
+              <li>**Außenwände (WDVS):** Hochleistungsdämmung für die Fassade.</li>
+              <li>**Dach- und Geschossdeckendämmung:** Verhindert Wärmeverluste nach oben.</li>
+              <li>**Kellerdeckendämmung:** Reduziert kalte Böden im Erdgeschoss.</li>
+            </ul>
+            <p>
+              Wir analysieren Ihren Bedarf und empfehlen das optimale Dämm-System, das den aktuellen Energiestandards entspricht und staatliche Förderungen ermöglicht.
+            </p>
+            <img src="#" class="img-fluid rounded mt-3" alt="Beispielbild Wärmedämmung">
+            <small class="text-muted d-block mt-2">Hinweis: Dies ist ein Platzhaltertext und -bild.</small>
+            <a href="#kontakt" class="btn btn-primary mt-3 modal-action-btn">Angebot anfordern</a>
           </div>
         </div>
       </div>
-      
+
+      {/* Akkordeon-Element 4: Carports */}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCarports">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCarports" aria-expanded="false" aria-controls="collapseCarports">
+             Carports – Schutz für Ihr Fahrzeug
+          </button>
+        </h2>
+        <div id="collapseCarports" class="accordion-collapse collapse" aria-labelledby="headingCarports" data-bs-parent="#leistungenAccordion">
+          <div class="accordion-body">
+            <p>
+              Ein Carport bietet Ihrem Fahrzeug optimalen Schutz vor Witterungseinflüssen wie Regen, Schnee, Hagel und Sonneneinstrahlung. Wir planen und bauen Carports, die sich harmonisch in Ihr Grundstück einfügen:
+            </p>
+            <ul>
+              <li>**Materialien:** Holz, Aluminium oder Stahl – passend zu Ihrem Stil.</li>
+              <li>**Dachformen:** Flachdach, Satteldach oder begrünte Dächer.</li>
+              <li>**Zusatz ausstattung:** Integrierte Abstellräume, Beleuchtung oder E-Ladesäulen.</li>
+            </ul>
+            <p>
+              Vom Fundament bis zur Dacheindeckung bieten wir Ihnen eine maßgeschneiderte Lösung, die Funktionalität und Ästhetik verbindet.
+            </p>
+            <img src="/images/carportMitAuto.jpg" class="img-fluid rounded mt-3" alt="Beispielbild Carport">
+            <small class="text-muted d-block mt-2">Hinweis: Dies ist ein Platzhaltertext und -bild.</small>
+            <a href="#kontakt" class="btn btn-primary mt-3 modal-action-btn">Angebot anfordern</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div> 
+  </div>
 </section>
+
