@@ -72,6 +72,31 @@ main > .section-container:first-child {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Stärkerer Schatten */
 }
 
+#hero {
+  background-color: #ffffff;
+  padding: 60px 40px;            /* mehr horizontaler Innenabstand */
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 10px;           /* ✅ Mehr Abstand unterhalb */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  max-width: 1200px;
+}
+
+#hero .row {
+  align-items: center;
+}
+
+/* Textbereich */
+#hero .col-md-6 {
+  z-index: 2;
+}
+
+/* Bild weiter nach rechts versetzen */
+#hero img {
+  max-height: 500px;
+  margin-left: 10px;             /* ✅ Bild nach rechts verschoben */
+}
+
 
 .gallery summary {
   cursor: pointer;
@@ -97,7 +122,7 @@ main > .section-container:first-child {
   border: 2px solid #ddd;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   display: block;
-<<<<<<< HEAD
+ 
   object-position: center; 
 }
 
@@ -106,9 +131,10 @@ main > .section-container:first-child {
 .sticky-button {
   position: fixed;
   bottom: 20px;
-  right: 100px;
+  right: calc((100vw - 1200px) / 2 + 20px); /* genau an der weißen Box */
   z-index: 9999;
 }
+
 
 .sticky-button a {
   display: inline-block;
@@ -125,9 +151,3 @@ main > .section-container:first-child {
 .sticky-button a:hover {
   background-color: #0056b3;
 }
-
- 
-=======
-}
-
->>>>>>> c42d188aa83d1aaaef762564c915e110b3463e63
